@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-primary-orange: hsl(26, 100%, 55%);
+$color-primary-paleorange: hsl(25, 100%, 94%);
+
+$color-darkblue: hsl(220, 13%, 13%);
+$color-darkgreyishblue: hsl(219, 9%, 45%);
+$color-lightgreyishblue: hsl(223, 64%, 98%);
+$color-greyishblue: hsl(220, 14%, 75%);
+
+body {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(153, 152, 152);
+}
+
+li {
+  list-style: none;
+}

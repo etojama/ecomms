@@ -1,0 +1,119 @@
+.main {
+  display: flex;
+  margin: 4rem 14rem;
+
+  &__img {
+    &-1 {
+      width: 19rem;
+      height: 19rem;
+      border-radius: 10px;
+    }
+  }
+
+  &__details {
+    margin: 3rem 1rem 0 1rem;
+    width: 30rem;
+    &-small {
+      text-transform: uppercase;
+      color: $color-primary-orange;
+      font-size: 0.7rem;
+    }
+
+    &-header {
+      width: 80%;
+      font-size: 2rem;
+      margin: 1.4rem 0;
+    }
+
+    &-text {
+      width: 85%;
+      font-size: 0.9rem;
+      margin-bottom: 1.4rem;
+      color: #aaa;
+    }
+
+    &-price {
+      h3 {
+        font-size: 1.2rem;
+
+        span {
+          background-color: $color-primary-paleorange;
+          color: $color-primary-orange;
+          padding: 0.2rem;
+          font-size: 0.8rem;
+          margin-left: 0.8rem;
+          margin-bottom: 1rem;
+          border-radius: 6px;
+        }
+      }
+
+      p {
+        color: #aaa;
+        text-decoration: line-through;
+        font-size: 0.7rem;
+        margin: 0.41rem 0;
+      }
+    }
+
+    &-movements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 -3rem;
+      margin-top: -2rem;
+
+      &-minus {
+        fill: $color-primary-orange;
+        width: 1.7rem;
+        margin-right: -6rem;
+      }
+
+      h3 {
+        margin-right: -6rem;
+        font-size: 1rem;
+      }
+
+      &-plus {
+        fill: $color-primary-orange;
+        width: 1.7rem;
+        margin-right: -6rem;
+      }
+
+      &-cart {
+        fill: #fff;
+        width: 1.1rem;
+        margin-right: 1rem;
+      }
+
+      &-btn {
+        background-color: $color-primary-orange;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1.8rem;
+        border: none;
+        border-radius: 6px;
+        width: 12rem;
+        height: 2.4rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.imgs {
+  width: 100%;
+  margin-top: 1rem;
+
+  &-sm {
+    width: 18%;
+    height: 5rem;
+    border-radius: 5px;
+
+    &:not(:last-child) {
+      margin-right: 0.7rem;
+    }
+  }
+}
