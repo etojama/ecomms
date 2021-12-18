@@ -1,0 +1,179 @@
+$color-primary-orange: hsl(26, 100%, 55%);
+$color-primary-paleorange: hsl(25, 100%, 94%);
+
+$color-darkblue: hsl(220, 13%, 13%);
+$color-darkgreyishblue: hsl(219, 9%, 45%);
+$color-lightgreyishblue: hsl(223, 64%, 98%);
+$color-greyishblue: hsl(220, 14%, 75%);
+
+.modal {
+  width: 30rem;
+  margin: 0 auto;
+  position: relative;
+  // top: -32rem;
+  // margin-bottom: -30rem;
+  display: none;
+
+  &__img {
+    &-1 {
+      width: 24rem;
+      height: 22rem;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__cross {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: -2rem;
+    right: 1.6rem;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      fill: $color-primary-orange;
+    }
+  }
+
+  &__left {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: $color-primary-orange;
+    }
+  }
+  &__right {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: $color-primary-orange;
+    }
+  }
+}
+
+.svg-parent-left {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.svg-parent-right {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.imgs {
+  margin: 1rem auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  &-smm1 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 2px solid $color-primary-orange;
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary-paleorange, 0.7)
+      ),
+      url("../img/image-product-1-thumbnail.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+
+  &-smm2 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 7px;
+    cursor: pointer;
+    background-image: url("../img/image-product-2-thumbnail.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-paleorange, 0.7)
+        ),
+        url("../img/image-product-2-thumbnail.jpg");
+    }
+  }
+
+  &-smm3 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 7px;
+    background-image: url("../img/image-product-3-thumbnail.jpg");
+    background-size: cover;
+    background-position: top;
+    cursor: pointer;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: top;
+
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-paleorange, 0.7)
+        ),
+        url("../img/image-product-3-thumbnail.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+  }
+  &-smm4 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 7px;
+    cursor: pointer;
+    background-image: url("../img/image-product-4-thumbnail.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-paleorange, 0.7)
+        ),
+        url("../img/image-product-4-thumbnail.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+  }
+}

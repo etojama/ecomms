@@ -24,13 +24,27 @@
           </li>
         </ul>
       </div>
+
+      <div class="lines">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </div>
+
       <div class="header-two">
+        <span>0</span>
         <svg class="header-two-cart">
           <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
         </svg>
         <img class="header-two-img" src="img/image-avatar.png" alt="user" />
       </div>
     </nav>
+
+    <div class="basket">
+      <h3>Cart</h3>
+      <hr />
+      <p>Your cart is empty</p>
+    </div>
 
     <main class="main">
       <div class="main__img">
@@ -40,7 +54,7 @@
           alt="main image"
         />
         <div class="imgs">
-          <img
+          <!-- <img
             class="imgs-sm"
             src="img/image-product-1-thumbnail.jpg"
             alt="small image 1"
@@ -59,7 +73,11 @@
             class="imgs-sm"
             src="img/image-product-4-thumbnail.jpg"
             alt="small image 4"
-          />
+          /> -->
+          <div class="imgs-sm1"></div>
+          <div class="imgs-sm2"></div>
+          <div class="imgs-sm3"></div>
+          <div class="imgs-sm4"></div>
         </div>
       </div>
       <div class="main__details">
@@ -76,13 +94,15 @@
           <p>$250.00</p>
         </div>
         <div class="main__details-movements">
-          <svg class="main__details-movements-minus">
-            <use xlink:href="img/sprite.svg#icon-minus"></use>
-          </svg>
-          <h3>0</h3>
-          <svg class="main__details-movements-plus">
-            <use xlink:href="img/sprite.svg#icon-plus"></use>
-          </svg>
+          <div class="main__details-movements-one">
+            <svg class="main__details-movements-one-minus">
+              <use xlink:href="img/sprite.svg#icon-minus"></use>
+            </svg>
+            <h3>0</h3>
+            <svg class="main__details-movements-one-plus">
+              <use xlink:href="img/sprite.svg#icon-plus"></use>
+            </svg>
+          </div>
           <button class="main__details-movements-btn">
             <svg class="main__details-movements-cart">
               <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
@@ -92,5 +112,37 @@
         </div>
       </div>
     </main>
+
+    <aside class="modal">
+      <svg class="modal__cross">
+        <use xlink:href="img/sprite.svg#icon-cross"></use>
+      </svg>
+      <div class="modal__img">
+        <img
+          class="modal__img-1"
+          src="img/image-product-1.jpg"
+          alt="modal image"
+        />
+
+        <div class="imgs">
+          <div class="imgs-smm1"></div>
+          <div class="imgs-smm2"></div>
+          <div class="imgs-smm3"></div>
+          <div class="imgs-smm4"></div>
+        </div>
+      </div>
+
+      <div class="svg-parent-left">
+        <svg class="modal__left">
+          <use xlink:href="img/sprite.svg#icon-chevron-thin-left"></use>
+        </svg>
+      </div>
+
+      <div class="svg-parent-right">
+        <svg class="modal__right">
+          <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+        </svg>
+      </div>
+    </aside>
   </body>
 </html>

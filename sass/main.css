@@ -1,3 +1,181 @@
+.modal {
+  width: 30rem;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
+
+.modal__img-1 {
+  width: 24rem;
+  height: 22rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__cross {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: -2rem;
+  right: 1.6rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.modal__cross:hover {
+  fill: #ff7d1a;
+}
+
+.modal__left {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal__left:hover {
+  fill: #ff7d1a;
+}
+
+.modal__right {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.4rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal__right:hover {
+  fill: #ff7d1a;
+}
+
+.svg-parent-left {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.svg-parent-right {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.imgs {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imgs-smm1 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 2px solid #ff7d1a;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 237, 224, 0.7))), url("../img/image-product-1-thumbnail.jpg");
+  background-image: linear-gradient(to right, rgba(255, 237, 224, 0.7)), url("../img/image-product-1-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.imgs-smm2 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 7px;
+  cursor: pointer;
+  background-image: url("../img/image-product-2-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.imgs-smm2:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 237, 224, 0.7))), url("../img/image-product-2-thumbnail.jpg");
+  background-image: linear-gradient(to right, rgba(255, 237, 224, 0.7)), url("../img/image-product-2-thumbnail.jpg");
+}
+
+.imgs-smm3 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 7px;
+  background-image: url("../img/image-product-3-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-size: cover;
+  background-position: top;
+}
+
+.imgs-smm3:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 237, 224, 0.7))), url("../img/image-product-3-thumbnail.jpg");
+  background-image: linear-gradient(to right, rgba(255, 237, 224, 0.7)), url("../img/image-product-3-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.imgs-smm4 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 7px;
+  cursor: pointer;
+  background-image: url("../img/image-product-4-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.imgs-smm4:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 237, 224, 0.7))), url("../img/image-product-4-thumbnail.jpg");
+  background-image: linear-gradient(to right, rgba(255, 237, 224, 0.7)), url("../img/image-product-4-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,10 +213,25 @@
       justify-self: center;
 }
 
+.header-two {
+  position: relative;
+}
+
+.header-two span {
+  position: absolute;
+  top: 0.8rem;
+  right: 6.8rem;
+  font-size: 0.7rem;
+  color: #ffede0;
+  background-color: #ff7d1a;
+  padding: 0.1rem;
+}
+
 .header-two-cart {
   margin: 1rem;
   width: 1.2rem;
   height: 1.2rem;
+  cursor: pointer;
 }
 
 .header-two-img {
@@ -66,6 +259,51 @@ a {
 
 li {
   list-style: none;
+}
+
+.disappear {
+  display: none;
+}
+
+.bg-image {
+  border: 2px solid #ff7d1a;
+}
+
+.basket {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0.5rem;
+  right: 2rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.basket h3 {
+  height: 25%;
+  margin: 1rem 0 -1.5rem 1rem;
+  font-size: 1rem;
+}
+
+.basket hr {
+  border: 1px solid #ddd;
+}
+
+.basket p {
+  text-align: center;
+  margin: auto;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #aaa;
 }
 
 .main {
@@ -130,30 +368,45 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -4rem;
+  margin-top: 2rem;
+}
+
+.main__details-movements-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 -3rem;
-  margin-top: -2rem;
+  background-color: #eee;
+  width: 30%;
+  height: 3rem;
+  border-radius: 5px;
 }
 
-.main__details-movements-minus {
+.main__details-movements-one-minus {
   fill: #ff7d1a;
-  width: 1.7rem;
-  margin-right: -6rem;
+  width: 2rem;
+  cursor: pointer;
 }
 
-.main__details-movements h3 {
-  margin-right: -6rem;
+.main__details-movements-one h3 {
   font-size: 1rem;
 }
 
-.main__details-movements-plus {
+.main__details-movements-one-plus {
   fill: #ff7d1a;
-  width: 1.7rem;
-  margin-right: -6rem;
+  width: 2rem;
+  cursor: pointer;
 }
 
 .main__details-movements-cart {
@@ -181,20 +434,103 @@ li {
   height: 2.4rem;
   font-size: 0.8rem;
   cursor: pointer;
+  -webkit-box-shadow: 6px 6px 5px rgba(255, 125, 26, 0.5);
+          box-shadow: 6px 6px 5px rgba(255, 125, 26, 0.5);
+}
+
+.main__details-movements-btn:hover {
+  opacity: 0.9;
+}
+
+.main__details-movements-btn:active {
+  opacity: 1;
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 1px 3px rgba(255, 125, 26, 0.1);
+          box-shadow: 0 1px 3px rgba(255, 125, 26, 0.1);
 }
 
 .imgs {
   width: 100%;
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.7rem;
 }
 
-.imgs-sm {
+.imgs-sm1 {
   width: 18%;
   height: 5rem;
-  border-radius: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 2px solid #ff7d1a;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 237, 224, 0.7))), url("../img/image-product-1-thumbnail.jpg");
+  background-image: linear-gradient(to right, rgba(255, 237, 224, 0.7)), url("../img/image-product-1-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
-.imgs-sm:not(:last-child) {
-  margin-right: 0.7rem;
+.imgs-sm2 {
+  width: 18%;
+  height: 5rem;
+  border-radius: 7px;
+  cursor: pointer;
+  background-image: url("../img/image-product-2-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.imgs-sm2:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 237, 224, 0.7))), url("../img/image-product-2-thumbnail.jpg");
+  background-image: linear-gradient(to right, rgba(255, 237, 224, 0.7)), url("../img/image-product-2-thumbnail.jpg");
+}
+
+.imgs-sm3 {
+  width: 18%;
+  height: 5rem;
+  border-radius: 7px;
+  background-image: url("../img/image-product-3-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-size: cover;
+  background-position: top;
+}
+
+.imgs-sm3:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 237, 224, 0.7))), url("../img/image-product-3-thumbnail.jpg");
+  background-image: linear-gradient(to right, rgba(255, 237, 224, 0.7)), url("../img/image-product-3-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.imgs-sm4 {
+  width: 18%;
+  height: 5rem;
+  border-radius: 7px;
+  cursor: pointer;
+  background-image: url("../img/image-product-4-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.imgs-sm4:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 237, 224, 0.7))), url("../img/image-product-4-thumbnail.jpg");
+  background-image: linear-gradient(to right, rgba(255, 237, 224, 0.7)), url("../img/image-product-4-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;
 }
 /*# sourceMappingURL=main.css.map */
