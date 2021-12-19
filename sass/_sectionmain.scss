@@ -1,18 +1,44 @@
 .main {
   display: flex;
-  margin: 4rem 14rem;
+  width: 55rem;
+  margin: 3rem auto;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 20rem;
+    margin: 0;
+  }
 
   &__img {
+    margin-right: 2rem;
+
+    @media only screen and (max-width: 600px) {
+      width: 100vw;
+    }
+
     &-1 {
       width: 19rem;
       height: 19rem;
       border-radius: 10px;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+
+        border-radius: 0;
+      }
     }
   }
 
   &__details {
-    margin: 3rem 1rem 0 1rem;
-    width: 30rem;
+    margin: 3rem auto;
+    width: 25rem;
+    // border: 3px solid red;
+
+    @media only screen and (max-width: 600px) {
+      width: 20rem;
+      margin: 3rem;
+    }
+
     &-small {
       text-transform: uppercase;
       color: $color-primary-orange;
@@ -20,21 +46,36 @@
     }
 
     &-header {
-      width: 80%;
+      width: 100%;
       font-size: 2rem;
       margin: 1.4rem 0;
+
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+        font-size: 1.7rem;
+        margin: 1rem 0;
+      }
     }
 
     &-text {
-      width: 85%;
+      width: 90%;
       font-size: 0.9rem;
       margin-bottom: 1.4rem;
       color: #aaa;
+
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+        font-size: 0.75rem;
+      }
     }
 
     &-price {
       h3 {
         font-size: 1.2rem;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 1rem;
+        }
 
         span {
           background-color: $color-primary-paleorange;
@@ -44,6 +85,10 @@
           margin-left: 0.8rem;
           margin-bottom: 1rem;
           border-radius: 6px;
+
+          @media only screen and (max-width: 600px) {
+            font-size: 0.6rem;
+          }
         }
       }
 
@@ -52,6 +97,10 @@
         text-decoration: line-through;
         font-size: 0.7rem;
         margin: 0.41rem 0;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 0.5rem;
+        }
       }
     }
 
@@ -62,6 +111,11 @@
       margin-left: -4rem;
       margin-top: 2rem;
 
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        margin: auto;
+      }
+
       &-one {
         display: flex;
         justify-content: space-around;
@@ -71,10 +125,19 @@
         height: 3rem;
         border-radius: 5px;
 
+        @media only screen and (max-width: 600px) {
+          justify-content: space-between;
+          width: 95%;
+        }
+
         &-minus {
           fill: $color-primary-orange;
           width: 2rem;
           cursor: pointer;
+
+          @media only screen and (max-width: 600px) {
+            width: 1.4rem;
+          }
         }
 
         h3 {
@@ -85,6 +148,10 @@
           fill: $color-primary-orange;
           width: 2rem;
           cursor: pointer;
+
+          @media only screen and (max-width: 600px) {
+            width: 1.4rem;
+          }
         }
       }
 
@@ -118,6 +185,10 @@
           transform: translateY(0.2rem);
           box-shadow: 0 1px 3px rgba($color-primary-orange, 0.1);
         }
+
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -144,6 +215,10 @@
   //     background-color: rgba($color-primary-orange, 0.8);
   //   }
   // }
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 
   &-sm1 {
     width: 18%;

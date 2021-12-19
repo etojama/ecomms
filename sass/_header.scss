@@ -3,11 +3,21 @@
   justify-content: space-between;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 
+  @media only screen and (max-width: 600px) {
+    height: 15vh;
+    width: 80vh;
+  }
+
   &-one {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1.5rem;
+
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     &-main {
       margin-right: 3rem;
@@ -20,19 +30,35 @@
     margin-left: 1.2rem;
     font-size: 1.1rem;
     justify-self: center;
+
+    // @media only screen and (max-width: 600px) {
+    //   // list items
+    //   // left: 500px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   // height: 5rem;
+    // }
   }
 
   &-two {
     position: relative;
 
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
     span {
       position: absolute;
-      top: 0.8rem;
-      right: 6.8rem;
+      top: 0.9rem;
+      right: 6.4rem;
       font-size: 0.7rem;
       color: hsl(25, 100%, 94%);
       background-color: hsl(26, 100%, 55%);
-      padding: 0.1rem;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
     }
 
     &-cart {
@@ -46,6 +72,12 @@
       margin: 1rem 3rem 1rem 1rem;
       width: 2rem;
       height: 2rem;
+      cursor: pointer;
+
+      &:hover {
+        border: 2px solid $color-primary-orange;
+        border-radius: 100%;
+      }
     }
   }
 }

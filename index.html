@@ -43,7 +43,21 @@
     <div class="basket">
       <h3>Cart</h3>
       <hr />
-      <p>Your cart is empty</p>
+      <p class="basket__empty">Your cart is empty</p>
+      <div class="basket__filled">
+        <div class="basket__filled-desc">
+          <img src="img/image-product-1-thumbnail.jpg" alt="image 1" />
+          <div class="basket__filled-desc-text">
+            <p>Fall Limited Edition Sneakers</p>
+            <p>$125.00 x 3 <span>$375.00</span></p>
+          </div>
+          <svg class="basket__filled-desc-trash">
+            <use xlink:href="img/sprite.svg#icon-trash"></use>
+          </svg>
+        </div>
+
+        <button class="basket__filled-checkout btn">Checkout</button>
+      </div>
     </div>
 
     <main class="main">
