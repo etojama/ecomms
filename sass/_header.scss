@@ -5,7 +5,8 @@
 
   @media only screen and (max-width: 600px) {
     height: 15vh;
-    width: 80vh;
+    width: 100%;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
 
   &-one {
@@ -13,6 +14,7 @@
     justify-content: center;
     align-items: center;
     margin: 1.5rem;
+    position: relative;
 
     @media only screen and (max-width: 600px) {
       display: flex;
@@ -22,6 +24,28 @@
     &-main {
       margin-right: 3rem;
       font-size: 2.4rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.7rem;
+        margin-left: 5rem;
+        margin-right: -1rem;
+      }
+    }
+
+    &-nav {
+      display: flex;
+
+      @media only screen and (max-width: 600px) {
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        flex-direction: column;
+        background-color: #fff;
+        width: 80%;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.3s;
+        height: 15rem;
+      }
     }
   }
 
@@ -31,13 +55,9 @@
     font-size: 1.1rem;
     justify-self: center;
 
-    // @media only screen and (max-width: 600px) {
-    //   // list items
-    //   // left: 500px;
-    //   display: flex;
-    //   flex-direction: column;
-    //   // height: 5rem;
-    // }
+    @media only screen and (max-width: 600px) {
+      padding-top: 1.6rem;
+    }
   }
 
   &-two {
@@ -78,6 +98,43 @@
         border: 2px solid $color-primary-orange;
         border-radius: 100%;
       }
+
+      @media only screen and (max-width: 600px) {
+        margin: 0.5rem 1rem;
+      }
     }
   }
+}
+
+.lines {
+  display: none;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+
+    &:active &-2 {
+      opacity: 0;
+    }
+
+    &:active &-1 {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &:active &-3 {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
+
+.line {
+  display: block;
+  width: 2rem;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s;
+  background-color: #aaa;
 }

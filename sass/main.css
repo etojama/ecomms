@@ -190,7 +190,9 @@
 @media only screen and (max-width: 600px) {
   .header {
     height: 15vh;
-    width: 80vh;
+    width: 100%;
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
 }
 
@@ -205,6 +207,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 1.5rem;
+  position: relative;
 }
 
 @media only screen and (max-width: 600px) {
@@ -224,12 +227,51 @@
   font-size: 2.4rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .header-one-main {
+    font-size: 1.7rem;
+    margin-left: 5rem;
+    margin-right: -1rem;
+  }
+}
+
+.header-one-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-one-nav {
+    position: fixed;
+    top: 5rem;
+    left: -100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 15rem;
+  }
+}
+
 .header-list {
   display: inline;
   margin-left: 1.2rem;
   font-size: 1.1rem;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-list {
+    padding-top: 1.6rem;
+  }
 }
 
 .header-two {
@@ -279,6 +321,47 @@
 .header-two-img:hover {
   border: 2px solid #ff7d1a;
   border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-two-img {
+    margin: 0.5rem 1rem;
+  }
+}
+
+.lines {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .lines {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+  }
+  .lines:active .lines-2 {
+    opacity: 0;
+  }
+  .lines:active .lines-1 {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .lines:active .lines-3 {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.line {
+  display: block;
+  width: 2rem;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #aaa;
 }
 
 * {
@@ -461,8 +544,9 @@ a:hover::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 20rem;
+    width: 25rem;
     margin: 0;
+    border: 3px solid red;
   }
 }
 
@@ -473,6 +557,7 @@ a:hover::before {
 @media only screen and (max-width: 600px) {
   .main__img {
     width: 100vw;
+    margin-right: 0;
   }
 }
 
