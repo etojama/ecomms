@@ -43,20 +43,26 @@
     <div class="basket">
       <h3>Cart</h3>
       <hr />
-      <p class="basket__empty">Your cart is empty</p>
-      <div class="basket__filled">
+      <p class="basket__empty" id="empty">Your cart is empty</p>
+      <div class="basket__filled" id="filled">
         <div class="basket__filled-desc">
           <img src="img/image-product-1-thumbnail.jpg" alt="image 1" />
           <div class="basket__filled-desc-text">
             <p>Fall Limited Edition Sneakers</p>
-            <p>$125.00 x 3 <span>$375.00</span></p>
+            <!-- <p>$125.00 x 3 <span>$375.00</span></p> -->
+            <p>
+              $125.00 x <span id="figure">0</span> =
+              <span id="result">$0.00</span>
+            </p>
           </div>
-          <svg class="basket__filled-desc-trash">
+          <svg class="basket__filled-desc-trash" id="trash">
             <use xlink:href="img/sprite.svg#icon-trash"></use>
           </svg>
         </div>
 
-        <button class="basket__filled-checkout btn">Checkout</button>
+        <button class="basket__filled-checkout btn" id="checkout">
+          Checkout
+        </button>
       </div>
     </div>
 
@@ -129,7 +135,7 @@
               <use xlink:href="img/sprite.svg#icon-plus"></use>
             </svg>
           </div>
-          <button class="main__details-movements-btn">
+          <button class="main__details-movements-btn" id="add-to-cart">
             <svg class="main__details-movements-cart">
               <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
             </svg>
