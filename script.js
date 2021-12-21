@@ -42,10 +42,6 @@ minusItem.addEventListener("click", () => {
   }
 });
 
-// checkout.addEventListener("click", () => {
-//   checkout.textContent = "clicked";
-// });
-
 trash.addEventListener("click", () => {
   filled.style.opacity = 0;
   empty.style.display = "inline";
