@@ -12,7 +12,7 @@
     <nav class="header">
       <div class="header-one">
         <h3 class="header-one-main">sneakers</h3>
-        <ul class="header-one-nav">
+        <ul class="header-one-nav" id="nav">
           <li class="header-list">
             <a href="#" class="header-link">Collections</a>
           </li>
@@ -32,7 +32,7 @@
       </div>
 
       <div class="header-two">
-        <span>0</span>
+        <span id="cart-span">0</span>
         <svg class="header-two-cart">
           <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
         </svg>
@@ -67,6 +67,18 @@
           src="img/image-product-1.jpg"
           alt="main image"
         />
+
+        <div class="svg-parent-left center">
+          <svg class="modal__left" id="mod-left">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-left"></use>
+          </svg>
+        </div>
+
+        <div class="svg-parent-right center">
+          <svg class="modal__right" id="mod-right">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+          </svg>
+        </div>
         <div class="imgs">
           <!-- <img
             class="imgs-sm"
@@ -109,11 +121,11 @@
         </div>
         <div class="main__details-movements">
           <div class="main__details-movements-one">
-            <svg class="main__details-movements-one-minus">
+            <svg class="main__details-movements-one-minus" id="minus">
               <use xlink:href="img/sprite.svg#icon-minus"></use>
             </svg>
             <h3>0</h3>
-            <svg class="main__details-movements-one-plus">
+            <svg class="main__details-movements-one-plus" id="add">
               <use xlink:href="img/sprite.svg#icon-plus"></use>
             </svg>
           </div>
@@ -147,13 +159,13 @@
       </div>
 
       <div class="svg-parent-left">
-        <svg class="modal__left">
+        <svg class="modal__left" id="mod-left">
           <use xlink:href="img/sprite.svg#icon-chevron-thin-left"></use>
         </svg>
       </div>
 
       <div class="svg-parent-right">
-        <svg class="modal__right">
+        <svg class="modal__right" id="mod-right">
           <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
         </svg>
       </div>
