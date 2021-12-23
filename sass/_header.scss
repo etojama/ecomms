@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
-  // width: 100%;
-  // border: 2px solid blue;
 
   @media only screen and (max-width: 600px) {
     height: 15vh;
@@ -103,7 +101,6 @@
       background-color: hsl(26, 100%, 55%);
       padding: 0.1rem 0.3rem;
       border-radius: 4px;
-      // display: none;
 
       @media only screen and (max-width: 900px) {
         top: 1.7rem;
@@ -151,18 +148,6 @@
     position: fixed;
     top: 2rem;
     left: 2rem;
-
-    // &:active &-2 {
-    //   opacity: 0;
-    // }
-
-    // &:active &-1 {
-    //   transform: translateY(8px) rotate(45deg);
-    // }
-
-    // &:active &-3 {
-    //   transform: translateY(-8px) rotate(-45deg);
-    // }
   }
 }
 
