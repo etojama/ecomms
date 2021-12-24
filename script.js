@@ -19,6 +19,7 @@ const modalSmallImg2 = document.querySelector(".modal-sm2");
 const modalSmallImg3 = document.querySelector(".modal-sm3");
 const modalSmallImg4 = document.querySelector(".modal-sm4");
 
+const counter = document.querySelector("#counter");
 const overlay = document.querySelector(".overlay");
 const showCart = document.querySelectorAll(".show-cart");
 const basket = document.querySelector(".basket");
@@ -48,6 +49,7 @@ addItem.addEventListener("click", () => {
   cartSpan.textContent = count++;
 
   figure.textContent = count - 1;
+  counter.textContent = count - 1;
 
   let calc = count * 125;
   result.textContent = `$${calc - 125}`;
@@ -56,7 +58,9 @@ addItem.addEventListener("click", () => {
 
 minusItem.addEventListener("click", () => {
   cartSpan.textContent = count--;
+
   figure.textContent = count + 1;
+  counter.textContent = count + 1;
   let calc = count * 125;
   result.textContent = `$${calc + 125}`;
 

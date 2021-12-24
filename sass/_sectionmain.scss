@@ -3,6 +3,9 @@
   width: 50rem;
   margin: 3rem auto;
 
+  @media only screen and (max-width: 900px) {
+    width: 40rem;
+  }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     width: 100vw;
@@ -32,16 +35,15 @@
   &__details {
     margin: 3rem auto;
     width: 25rem;
-    // border: 3px solid red;
 
     @media only screen and (max-width: 900px) {
       width: 18rem;
-      // margin: 2rem 0 2rem 1rem;
-      // margin: 2rem 0 2rem 1rem;
+      margin-left: -0.5rem;
     }
     @media only screen and (max-width: 600px) {
-      width: 22rem;
+      width: 20rem;
       margin: 3rem auto;
+      padding: 1rem;
     }
 
     &-small {
