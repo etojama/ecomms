@@ -76,6 +76,7 @@ trash.addEventListener("click", () => {
   count = 1;
   figure.textContent = "0";
   result.textContent = "0";
+  counter.textContent = 0;
   cartSpan.textContent = 0;
   filled.style.opacity = 0;
   empty.style.display = "inline";
