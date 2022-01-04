@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Commerce site</title>
+    <link rel="stylesheet" href="sass/main.css" />
+    <script defer src="scriptform.js"></script>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="header-one">
+        <h3 class="header-one-main">sneakers</h3>
+        <ul class="header-one-nav" id="nav">
+          <li class="header-list">
+            <a href="#" class="header-link">Collections</a>
+          </li>
+          <li class="header-list"><a href="#" class="header-link">Men</a></li>
+          <li class="header-list"><a href="#" class="header-link">Women</a></li>
+          <li class="header-list"><a href="#" class="header-link">About</a></li>
+          <li class="header-list">
+            <a href="#" class="header-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="lines">
+        <span class="lines-1 line" id="line1"></span>
+        <span class="lines-2 line" id="line2"></span>
+        <span class="lines-3 line" id="line3"></span>
+      </div>
+
+      <div class="overlay hidden"></div>
+
+      <div class="header-two">
+        <span id="cart-span">0</span>
+        <svg class="header-two-cart show-cart">
+          <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+        </svg>
+        <img
+          class="header-two-img show-cart"
+          id="user"
+          src="img/image-avatar.png"
+          alt="user"
+        />
+      </div>
+    </nav>
+
+    <form action="" class="form" id="form__id">
+      <div class="form__container">
+        <label for="name">Enter Name</label> <br />
+        <input type="text" id="name" /> <br />
+        <small id="small-name"></small>
+        <br />
+        <label for="phone">Enter Phone number</label> <br />
+        <input type="number" id="phone" /> <br />
+        <small id="small-phone"></small>
+        <br />
+        <label for="address">Enter Address</label> <br />
+        <input type="text" id="address" /> <br />
+        <small id="small-address"></small>
+        <br />
+        <label for="email">Enter Email</label> <br />
+        <input type="text" id="email" /> <br />
+        <small id="small-email"></small>
+        <br />
+        <button class="basket__filled-checkout btn" id="form-btn">
+          Submit
+        </button>
+      </div>
+    </form>
+    <div class="home">
+      <a href="index.html" class="home__btn ch">Back To Homepage</a>
+    </div>
+  </body>
+</html>

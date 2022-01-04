@@ -47,3 +47,18 @@ a {
     transform: scaleX(1);
   }
 }
+
+.ch {
+  color: #fff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+  }
+}

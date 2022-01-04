@@ -1,0 +1,74 @@
+$color-primary-orange: hsl(26, 100%, 55%);
+$color-primary-paleorange: hsl(25, 100%, 94%);
+
+.form {
+  width: 40vw;
+  background-color: #ccc;
+  font-size: 1rem;
+  margin: 0 auto;
+  height: 70vh;
+
+  @media only screen and (max-width: 600px) {
+    width: 80vw;
+  }
+
+  &__container {
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  & small {
+    height: 3rem;
+    width: 80%;
+    color: $color-primary-orange;
+  }
+
+  & input {
+    width: 100%;
+    height: 2rem;
+    // margin-bottom: 0.9rem;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+
+    &:focus {
+      outline: 1px solid $color-primary-orange;
+    }
+  }
+
+  & button {
+    width: 100%;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: 600px) {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.home {
+  width: 12rem;
+  margin: 0.8rem auto;
+
+  &__btn {
+    color: $color-primary-orange;
+    background-color: $color-primary-paleorange;
+    padding: 0.7rem;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+
+    &:hover {
+      background-color: transparent;
+      border: 0.5px solid $color-primary-orange;
+      border-radius: 3px;
+    }
+  }
+}
+
+.invalid {
+  border: 2px solid red;
+}
